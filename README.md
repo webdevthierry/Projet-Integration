@@ -24,4 +24,5 @@ Aide supplémentaire :
 Les comptes-rendus doivent être envoyés à cette adresse
 
   __Email : s.ferey@cleo-consulting.fr__
+  
   __Objet : [CARED PROJET] nom prénom - jour x__
