@@ -21,5 +21,7 @@ Aide supplémentaire :
   - http://getbootstrap.com/
   - https://jqueryui.com/
 
-Les comptes-rendus doivent être envoyés à cette adresse Email : s.ferey@cleo-consulting.fr
-  Objet : [CARED PROJET] nom prénom - jour x
+Les comptes-rendus doivent être envoyés à cette adresse
+
+  __Email : s.ferey@cleo-consulting.fr__
+  __Objet : [CARED PROJET] nom prénom - jour x__
