@@ -3,13 +3,14 @@
 <head>
 	<title>Home</title>
 	<meta charset="utf_8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
 	<style type="text/css">
-	
 
 	.container
 	{
@@ -18,13 +19,13 @@
 
 	}
 
-	table
+	.services table
 	{
 	    align: center;
 	    width: 100%;
 	}
 
-	td
+	.services td
 	{
 		vertical-align: top;
 		text-align: left;
@@ -32,12 +33,12 @@
 	    border: 1px solid black;
 	}
 
-	td:nth-of-type(2)
+	.services td:nth-of-type(2)
 	{
 		padding-left: 5px;
 	}
 
-	td:first-of-type
+	.services td:first-of-type
 	{
 		width: 55px;
 		text-align: center;
@@ -136,11 +137,98 @@
 		color: red;
 	}
 
+	.customers
+	{
+		background: #EEE;
+	}
+
+	.name
+	{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 0.9em;
+	}
+
+	.function
+	{
+		color: #999;
+		font-weight: normal;
+		font-size: 0.8em;
+	}
+
+	.testimonials .profile{
+		width: 130px;
+	}
+
+	.testimonials .commentsLeft
+	{
+		position: relative;
+		left: 8px;
+		background: white;
+		height: 100%;
+		width: 100%;
+		padding: 25px 10px;
+	}
+
+	.testimonials .commentsRight
+	{
+		position: relative;
+		right: 8px;
+		background: white;
+		height: 100%;
+		width: 100%;
+		padding: 25px 10px;
+	}
+
+	.testimonials .triangle-left
+	{
+		position: absolute;
+		top: 23px;
+		left: 143px;
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-right: 10px solid red;
+		border-bottom: 7px solid transparent;
+	}
+
+	.testimonials .triangle-right
+	{
+		position: absolute;
+		top: 23px;
+		right: 143px;
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-left: 10px solid red;
+		border-bottom: 7px solid transparent;
+	}
+
+	.testimonials img
+	{
+		border-radius: 100%;
+	}
+
+	td
+	{
+		border: 1px solid black;
+	}
+
+	#up
+	{
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		width: 25px;
+		height: 25px;
+		background: #999;
+	}
+
 	</style>
 
 </head>
 <body>
-	<nav class="navbar navbar-default navhead">
+	<nav id="header" class="navbar navbar-default navhead">
 		<div class="container">
 			<div class="collapse navbar-collapse" id="bs-navbar-network">
 				<ul class="nav navbar-nav">
@@ -225,7 +313,7 @@
 		</a>
 	</div>
 
-	<div class="container">
+	<div class="container services">
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<h1>We are here to serve you</h1>
@@ -362,8 +450,158 @@
 				</table>
 			</div>
 		</div>
+	</div>
+
+	<br>
+	<div class="container-fluid customers">
+	<div class="container testimonials">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Customer <strong>testimonials</strong></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<i class="fa fa-angle-double-up fa-lg fa-red"></i><i class="fa fa-angle-double-up fa-lg fa-red"></i><i class="fa fa-angle-double-up fa-lg fa-red"></i><i class="fa fa-angle-double-up fa-lg fa-red"></i><i class="fa fa-angle-double-up fa-lg fa-red"></i>
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-6">
+
+				<table>
+					<tr>
+						<td class="name text-center profile">
+							<img src="images/t1.jpg">
+							<br>Connor Gibson
+							<p class="function">Interface Designer
+							</p>
+						</td>
+						<td>
+							<div class="triangle-left"></div>
+							<div class="commentsLeft">
+								<p><i class="fa fa-quote-left fa-lg"></i> Maecenas sed diam eget risus varius blandit sit amel non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+				
+			</div>
+			<div class="col-md-6">
+				<table>
+					<tr>
+						<td>
+							<div class="triangle-right"></div>
+							<div class="commentsRight">
+								<p><i class="fa fa-quote-left fa-lg"></i> Maecenas sed diam eget risus varius blandit sit amel non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus.</p>
+							</div>
+						</td>
+						<td class="name text-center profile">
+							<img src="images/t2.jpg">
+							<br>Barklay Widerski
+							<p class="function">Computer Engineer
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+
+				<table>
+					<tr>
+						<td class="name text-center profile">
+							<img src="images/t3.jpg">
+							<br>Nikolas Brooten
+							<p class="function">Sales Manager
+							</p>
+			
+						</td>
+						<td>
+							<div class="triangle-left"></div>
+							<div class="commentsLeft">
+								<p><i class="fa fa-quote-left fa-lg"></i> Maecenas sed diam eget risus varius blandit sit amel non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus.</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+				
+			</div>
+			<div class="col-md-6">
+				<table>
+					<tr>
+						<td>
+							<div class="triangle-right"></div>
+							<div class="commentsRight">
+								<p><i class="fa fa-quote-left fa-lg"></i> Maecenas sed diam eget risus varius blandit sit amel non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus.</p>
+							</div>
+						</td>
+						<td class="name text-center profile">
+							<img src="images/t4.jpg">
+							<br>Coriss Ambady
+							<p class="function">Marketing Specialist
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	</div>
+
+	<div class="container">
+
+		<div id="miniCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+		<ol class="carousel-indicators">
+	    	<li data-target="#miniCarousel" data-slide-to="0" class="active"></li>
+	    	<li data-target="#miniCarousel" data-slide-to="1"></li>
+	  	</ol>
+
+	  <!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		    	<div class="row text-center">
+				    <img src="images/c1.png">
+				    <img src="images/c2.png">
+				    <img src="images/c3.png">
+			    </div>
+			  
+		    </div>
+		    <div class="item">
+		    	<div class="row text-center">
+			 		<img src="images/c4.png">
+			    	<img src="images/c5.png">
+			    	<img src="images/c6.png">  
+			    </div>    
+		    </div>
+		</div>
+
+		  <!-- Controls -->
+		<a class="left carousel-control" href="#miniCarousel" role="button" data-slide="prev">
+		    
+		    <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#miniCarousel" role="button" data-slide="next">
+		   
+		    <span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	</div>
+
+<div id="up" class="text-center"><a href="#header"><i class="fa fa-hand-o-up fa-lg"></i></a> </div>
 
 <br>
 <br>
