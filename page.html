@@ -22,12 +22,12 @@
 		padding: 13px;
 	}
 
-	p, h1
+	p, h1, h4
 	{
 		font-family: "Open Sans";
 	}
 
-	.ceo, .weDo, .testimonials
+	.ceo, .weDo, .testimonials, .about, .numbers, .posts
 	{
 		padding: 30px 0 50px 0;
 	}
@@ -84,23 +84,27 @@
 
 	.weDo .com
 	{
-		background: #00E1FF;
+		background: #00b9ed;
+		opacity:0.7;
 
 	}
 
 	.weDo .pho
 	{
-		background: #ff0050;
+		background: #ff0020;
+		opacity:0.7;
 	}
 
 	.weDo .web
 	{
-		background: #55eea6;
+		background: #00e5b7;
+		opacity:0.7;
 	}
 
 	.weDo .ill
 	{
 		background: #FFB300;
+		opacity:0.7;
 	}
 
 
@@ -169,7 +173,7 @@
 		width: 0;
 		height: 0;
 		border-top: 7px solid transparent;
-		border-right: 10px solid red;
+		border-right: 10px solid white;
 		border-bottom: 7px solid transparent;
 	}
 
@@ -181,7 +185,7 @@
 		width: 0;
 		height: 0;
 		border-top: 7px solid transparent;
-		border-left: 10px solid red;
+		border-left: 10px solid white;
 		border-bottom: 7px solid transparent;
 	}
 
@@ -324,6 +328,7 @@
 		color: gray;
 	}
 
+
 	</style>
 
 </head>
@@ -350,7 +355,7 @@
 							<img src="images/ceo.jpg">
 						</td>
 						<td>
-							<h4>Collect Ideas</h4>
+							<h4>Vestibulum lugut praesent commodo cursus magna, scelerisque sit consectetur et. Cum sociis natoque penalibus et magnis dis tellus parturient pharetra montes nulla non metus auctor.</h4>
 							<p>Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere eral a ante venenatis dapibus.
 							</p>
 						</td>
@@ -368,7 +373,7 @@
 	<div class="container weDo">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1><strong>Our process</strong> on creating awesome projects</h1>
+				<h1> What we <strong>do</strong></h1>
 			</div>
 		</div>
 		<div class="row">
@@ -385,42 +390,41 @@
 
 		<div class="row text-center">
 
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<div class="com">
 				<i class="fa fa-shopping-cart fa-3x"></i>
 				<h4>E-Commerce</h4>
 				<p>Nulla vitae libero pharetra augue. etiam porta malescuada magna mollis euismod. eget lacinia odio sem nec elit.</p>
 				</div>
+				<br>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<div class="pho">
 				<i class="fa fa-camera fa-3x"></i>
-				<h4>E-Commerce</h4>
+				<h4>Photography</h4>
 				<p>Nulla vitae libero pharetra augue. etiam porta malescuada magna mollis euismod. eget lacinia odio sem nec elit.</p>
 				</div>
+				<br>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<div class="web">
 				<i class="fa fa-desktop fa-3x"></i>
-				<h4>E-Commerce</h4>
+				<h4>Web Design</h4>
 				<p>Nulla vitae libero pharetra augue. etiam porta malescuada magna mollis euismod. eget lacinia odio sem nec elit.</p>
 				</div>
+				<br>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<div class="ill">
 				<i class="fa fa-paint-brush fa-3x"></i>
-				<h4>E-Commerce</h4>
+				<h4>Illustration</h4>
 				<p>Nulla vitae libero pharetra augue. etiam porta malescuada magna mollis euismod. eget lacinia odio sem nec elit.</p>
 				</div>
 			</div>
-
 		</div>
 
-
-
 	</div>
 	</div>
-
 
 	<div class="container-fluid details">
 		<br><br><br><br>
@@ -469,7 +473,7 @@
 
 				<table>
 					<tr>
-						<td class="name text-center profile">
+						<td class="text-center profile name">
 							<img src="images/t1.jpg">
 							<br>Connor Gibson
 							<p class="function">Interface Designer
@@ -483,7 +487,7 @@
 						</td>
 					</tr>
 				</table>
-			<br>
+				<br>
 			</div>
 			<div class="col-md-6">
 				<table>
@@ -503,7 +507,7 @@
 					</tr>
 				</table>
 			</div>
-
+			<br>
 		</div>
 
 		<div class="row">
@@ -526,9 +530,9 @@
 						</td>
 					</tr>
 				</table>
-				
-				
+				<br>
 			</div>
+			
 			<div class="col-md-6">
 				<table>
 					<tr>
@@ -548,6 +552,7 @@
 				</table>
 			</div>
 		</div>
+
 
 	</div>	
 	</div>
@@ -610,10 +615,10 @@
 			<div class="col-md-6">
 				<h4>Why Choose Us?</h4>
 
-				<ul class="nav nav-pills">
-				  <li role="presentation" class="active"><a href="#">Home</a></li>
-				  <li role="presentation"><a href="#">Profile</a></li>
-				  <li role="presentation"><a href="#">Messages</a></li>
+				<ul class="nav nav-pills UCase">
+				  <li role="presentation" class="active"><a href="#">This is</a></li>
+				  <li role="presentation"><a href="#">Tabbed</a></li>
+				  <li role="presentation"><a href="#">Content</a></li>
 				</ul>
 				<br>
 				<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ul fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -639,31 +644,39 @@
 	</div>
 	</div>
 
+	<div class="container-fluid numbers gray">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-3 col-sm-6">
+				<i class="fa fa-camera-retro fa-3x fa-blue"></i>
+				<h4>7518</h4>
+				<p>Shots Taken</p>
+			</div>
 
+			<div class="col-md-3 col-sm-6">
+				<i class="fa fa-coffee fa-3x fa-blue"></i>
+				<h4>3472</h4>
+				<p>Cups of Coffee</p>
+			</div>
 
+			<div class="col-md-3 col-sm-6">
+				<i class="fa fa-video-camera fa-3x fa-blue"></i>
+				<h4>2184</h4>
+				<p>Movies Watched</p>
+			</div>
 
+			<div class="col-md-3 col-sm-6">
+				<i class="fa fa-trophy fa-3x fa-blue"></i>
+				<h4>4523</h4>
+				<p>Awards Won</p>
+			</div>
+		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	</div>
+	</div>
 
 	<div class="container-fluid posts">
 	<br><br>
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
@@ -678,7 +691,6 @@
 							<strong>Magna Mollis ultricies</strong>
 							<ul class="list-inline UCase date">
 								<li class="postsDate">3th Oct 2012</li><li>15 <i class="fa fa-comments"></i></li>
-
 							</ul>
 						</td>
 					</tr>
@@ -690,7 +702,6 @@
 							<strong>Magna Mollis ultricies</strong>
 							<ul class="list-inline UCase date">
 								<li class="postsDate">28th sep 2012</li><li>5 <i class="fa fa-comments"></i></li>
-
 							</ul>
 						</td>
 					</tr>
@@ -702,20 +713,20 @@
 							<strong>Magna Mollis ultricies</strong>
 							<ul class="list-inline UCase date">
 								<li class="postsDate">14th aug 2012</li><li>9<i class="fa fa-comments"></i></li>
-
 							</ul>
 						</td>
 					</tr>
-
 				</table>
-
 			</div>
 			<div class="col-md-4">
 				<h4><strong>Subscribe to Our Newsletter</strong></h4>
 
 				<form class="form-inline">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Enter email"><button class="btn btn-info">JOIN</button>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Enter email">
+						<span class="input-group-btn">
+						<button class="btn btn-info">JOIN</button>
+						</span>
 					</div>
 				</form>
 				<br>
@@ -733,9 +744,6 @@
 						<span style="padding-left:5px;">+00 (123) 456 78 90</span></li>
 					<li><i class="fa fa-envelope"></i><span style="padding-left:8px;">first.last@email.com</span></li>
 				</ul>
-
-
-
 			</div>
 			<div class="col-md-4">
 				<h4><strong>Tags</strong></h4>
@@ -773,7 +781,6 @@
 		</div>			
 	</div>
 	<br>
-	
 	</div>
 
 	<div class="container-fluid copyright">
@@ -791,21 +798,12 @@
 					<li class="sm5"><a href="#"><i class="fa fa-linkedin"></i></a></li>
 				</ul>
 			</div>
-
 		</div>
 			
 	</div>
 	</div>
 
 	<a href="#header"><div id="up" class="text-center"><i class="fa fa-envelope-o fa-lg"></i></div></a>	
-
-
-<br><br>
-	<br><br>
-	<br><br><br>
-	<br><br>
-	<br>
-
 
 </body>
 </html>
