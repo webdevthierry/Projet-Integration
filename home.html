@@ -17,6 +17,20 @@
 		font-family: "Open Sans";
 	}
 
+	.testimonials, .services, .process, .news, .posts
+	{
+		padding: 30px 0 50px 0;
+	}
+
+	#up
+	{
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		background: black;
+		padding: 13px;
+	}
+
 	.container
 	{
 		padding-left: 100px;
@@ -34,8 +48,6 @@
 	{
 		vertical-align: top;
 		text-align: left;
-		
-	    border: 1px solid black;
 	}
 
 	.services td:nth-of-type(2)
@@ -214,21 +226,6 @@
 		border-radius: 100%;
 	}
 
-	td
-	{
-		border: 1px solid black;
-	}
-
-	#up
-	{
-		position: fixed;
-		right: 20px;
-		bottom: 20px;
-		width: 25px;
-		height: 25px;
-		background: #999;
-	}
-
 	.process2 .col-md-6:first-of-type
 	{
 		border-right: 1px solid black;
@@ -285,10 +282,27 @@
 		width: 100%;
 	}
 
+	.news a
+	{
+		color: gray;
+	}
+
+	.newsList
+	{
+		border-left: 1px solid gray;
+		border-right: 1px solid gray;
+	}
+
 	.new
 	{
 		background: white;
 		padding: 15px 20px;
+	}
+
+	.posts
+	{
+		background: #272727;
+		color: white;
 	}
 
 	.posts table
@@ -296,11 +310,112 @@
 		width: 100%;
 	}
 
+	.posts table td:first-of-type
+	{
+		padding-bottom: 10px;
+		vertical-align: top;
+	}
+
 	.posts table td:nth-of-type(2)
 	{
 		padding: 0 10px;
 		vertical-align: top;
 	}
+
+	.posts table strong
+	{
+		font-size: 1.1em;
+	}
+
+	.posts li .text
+	{
+		color: white;
+	}
+
+	.UCase
+	{
+		text-transform: uppercase;
+	}
+
+	.date
+	{
+		font-size: 0.9em;
+		color: gray;
+	}
+
+	.leftList
+	{
+		padding-left: 17px;
+	}
+
+	.postsBtn button
+	{
+		background: black;
+		color: #333;
+	}
+
+	.postsDate
+	{
+		border-right: 1px solid gray;
+	}
+
+	.copyright
+	{
+		background: #222;
+		color:white;
+		padding: 30px 0 25px 0;
+	}
+
+	.copyright .sm1
+	{
+		border: 3px solid orange;
+		border-radius: 100%;
+	}
+	.copyright .sm2
+	{
+		border: 3px solid #00FFFB;
+		border-radius: 100%;
+	}
+	.copyright .sm3
+	{
+		border: 3px solid blue;
+		border-radius: 100%;
+	}
+	.copyright .sm4
+	{
+		border: 3px solid red;
+		border-radius: 100%;
+	}
+	.copyright .sm5
+	{
+		border: 3px solid #00C3FF;
+		border-radius: 100%;
+	}
+
+ 	.copyright .sm1 a:visited
+ 	{
+ 		color: orange;
+ 	}
+ 	
+ 	.copyright .sm2 a:visited
+ 	{
+ 		color: #00FFFB;
+ 	}
+ 	
+ 	.copyright .sm3 a:visited
+ 	{
+ 		color: blue;
+ 	}
+ 	
+ 	.copyright .sm4 a:visited
+ 	{
+ 		color: red;
+ 	}
+
+	.copyright .sm5 a:visited
+ 	{
+ 		color: #00C3FF;
+ 	}
 
 	</style>
 
@@ -394,7 +509,7 @@
 	<div class="container services">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>We are here to serve you</h1>
+				<h1>We are <strong>here</strong> to serve you</h1>
 			</div>
 		</div>
 		<div class="row">
@@ -564,8 +679,7 @@
 						</td>
 					</tr>
 				</table>
-				
-				
+			<br>
 			</div>
 			<div class="col-md-6">
 				<table>
@@ -632,10 +746,7 @@
 		</div>
 
 	</div>
-	<br>
-	<br>
-	<br>
-	<br>
+	
 	</div>
 
 		<div id="miniCarousel" class="carousel slide" data-ride="carousel">
@@ -674,13 +785,9 @@
 		    <span class="sr-only">Next</span>
 		</a>
 	</div>
-
-	<div id="up" class="text-center"><a href="#header"><i class="fa fa-hand-o-up fa-lg"></i></a> </div>
-
 	
 	<div class="container-fluid gray">
-	<br>
-	<br>
+	
 	<div class="container process">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -755,7 +862,7 @@
 				<table>
 					<tr>
 						<td>
-							<img src="images/icon-graph.png">
+							<img src="images/icon-heart.png">
 						</td>
 						<td rowspan="2">
 							<strong>Collect Ideas</strong>
@@ -779,7 +886,7 @@
 				<table>
 					<tr>
 						<td>
-							<img src="images/icon-board.png">
+							<img src="images/icon-tv.png">
 						</td>
 						<td rowspan="2">
 							<strong>Collect Ideas</strong>
@@ -847,36 +954,36 @@
 			<div class="col-md-4">
 				<img src="images/b1.jpg">
 				<div class="new">
-					<h5 class="uppercase">
+					<h5>
 						<strong>Parturient Commodo Aenean</strong>
 					</h5>
-					<ul class="list-inline">
+					<ul class="list-inline UCase date">
 						<li>14 oct 2014</li>
-						<li>Logo.psd</li>
+						<li class="newsList">Logo.psd</li>
 						<li><i class="fa fa-comments"></i> 16</li>
 					</ul>
 					<p>Integer posuere erat a ante venenatis dapibus posuere velit atiquet. Cum sociis natoque penatibus et magnis dis parturient.
 					</p>
 					<p>
-						<a href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+						<a class="UCase" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
 					</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<img src="images/b2.jpg">
 				<div class="new">
-					<h5 class="uppercase">
+					<h5>
 						<strong>Parturient Commodo Aenean</strong>
 					</h5>
-					<ul class="list-inline">
+					<ul class="list-inline UCase date">
 						<li>14 oct 2014</li>
-						<li>Logo.psd</li>
+						<li class="newsList">Logo.psd</li>
 						<li><i class="fa fa-comments"></i> 16</li>
 					</ul>
 					<p>Integer posuere erat a ante venenatis dapibus posuere velit atiquet. Cum sociis natoque penatibus et magnis dis parturient.
 					</p>
 					<p>
-						<a href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+						<a class="UCase" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
 					</p>
 				</div>				
 			</div>
@@ -886,44 +993,42 @@
 					<h5>
 						<strong>Parturient Commodo Aenean</strong>
 					</h5>
-					<ul class="list-inline UCase">
+					<ul class="list-inline UCase date">
 						<li>14 oct 2014</li>
-						<li>Logo.psd</li>
+						<li class="newsList">Logo.psd</li>
 						<li><i class="fa fa-comments"></i> 16</li>
 					</ul>
 					<p>Integer posuere erat a ante venenatis dapibus posuere velit atiquet. Cum sociis natoque penatibus et magnis dis parturient.
 					</p>
 					<p>
-						<a href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+						<a class="UCase" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
 					</p>
 				</div>
 			</div>
 
 		</div>
 		<br><br>
-		<br><br>
+	
 		</div>
 	</div>
 
 	<div class="container-fluid posts">
-		<br>
-		<br>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h4><strong>Popular Posts</strong></h4>
+	<br><br>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h4><strong>Popular Posts</strong></h4>
 
-					<table>
+				<table>
 					<tr>
 						<td>
 							<img src="images/a1.jpg">
 						</td>
 						<td>
 							<strong>Magna Mollis ultricies</strong>
-							<ul class="list-inline">
-								<li>14 Oct 2014</li>
-								<li>Logo.psd</li>
-								<li><i class="fa fa-comments"></i> 15</li>
+							<ul class="list-inline UCase date">
+								<li class="postsDate">3th Oct 2012</li><li>15 <i class="fa fa-comments"></i></li>
 
 							</ul>
 						</td>
@@ -934,10 +1039,8 @@
 						</td>
 						<td>
 							<strong>Magna Mollis ultricies</strong>
-							<ul class="list-inline">
-								<li>14 Oct 2014</li>
-								<li>Logo.psd</li>
-								<li><i class="fa fa-comments"></i> 15</li>
+							<ul class="list-inline UCase date">
+								<li class="postsDate">28th sep 2012</li><li>5 <i class="fa fa-comments"></i></li>
 
 							</ul>
 						</td>
@@ -948,10 +1051,8 @@
 						</td>
 						<td>
 							<strong>Magna Mollis ultricies</strong>
-							<ul class="list-inline">
-								<li>14 Oct 2014</li>
-								<li>Logo.psd</li>
-								<li><i class="fa fa-comments"></i> 15</li>
+							<ul class="list-inline UCase date">
+								<li class="postsDate">14th aug 2012</li><li>9<i class="fa fa-comments"></i></li>
 
 							</ul>
 						</td>
@@ -959,44 +1060,95 @@
 
 				</table>
 
+			</div>
+			<div class="col-md-4">
+				<h4><strong>Subscribe to Our Newsletter</strong></h4>
+
+				<form class="form-inline">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Enter email"><button class="btn btn-danger">JOIN</button>
+					</div>
+				</form>
+				<br>
+				<h4><strong>Get In Touch</strong></h4>
+
+				<p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus.
+				</p>
+
+				<ul class="list-unstyled">
+					<li>
+						<i class="fa fa-map-marker"></i>
+						<span style="padding-left:9px;">Moonshine St. 14/05 Light City</span>
+					</li>
+					<li><i class="fa fa-phone"></i>
+						<span style="padding-left:5px;">+00 (123) 456 78 90</span></li>
+					<li><i class="fa fa-envelope"></i><span style="padding-left:8px;">first.last@email.com</span></li>
+				</ul>
+
+
+
+			</div>
+			<div class="col-md-4">
+				<h4><strong>Tags</strong></h4>
+		
+				<div class="postsBtn">
+					<button class="btn UCase">
+						<li><span class="text">Web</span></li>
+					</button>
+					<button class="btn UCase">
+						<li><span class="text">Photography</span></li>
+					</button>
+					<button class="btn UCase">
+						<li><span class="text">Illustration</span></li>
+					</button>
+					<button class="btn UCase">
+						<li><span class="text">Fun</span></li>
+					</button>
+					<button class="btn UCase">
+						<li><span class="text">Blog</span></li>
+					</button>
+					<button class="btn UCase">
+						<li><span class="text">Commercial</span></li>
+					</button>
 				</div>
-				<div class="col-md-4">
-					<h4><strong>Subscribe to Our Newsletter</strong></h4>
 
-					<form class="form-inline">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Enter email"><button class="btn btn-danger">JOIN</button>
-						</div>
-					</form>
-					
-					<h4><strong>Get In Touch</strong></h4>
+				<h4><strong>Categories</strong></h4>
+				<ul class="leftList">
+					<li>Web Design (21)</li>
+					<li>Photography (19)</li>
+					<li>Graphic Design (16)</li>
+					<li>Motion Video (23)</li>
+				</ul>
+			</div>
 
-					<p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus.
-					</p>
-
-					<ul>
-						<li>Moonshine St. 14/05 Light City</li>
-						<li>+00 (123) 456 78 90</li>
-						<li>first.last@email.com</li>
-					</ul>
-
-
-
-				</div>
-				<div class="col-md-4">
-
-				</div>
-
-			</div>			
-		</div>
+		</div>			
 	</div>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+	<br>
+	
+	</div>
+
+	<div class="container-fluid copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<p><i class="fa fa-copyright"></i> 2015 Kwoon. All rights reserved. Theme by elemis.</p>
+			</div>
+			<div class="col-xs-6" style="text-align:right;">
+				<ul class="list-inline">
+					<li class="sm1"><a href="#"><i class="fa fa-rss"></i></a></li>
+					<li class="sm2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li class="sm3"><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li class="sm4"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+					<li class="sm5"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+
+		</div>
+			
+	</div>
+	</div>
+
+	<a href="#header"><div id="up" class="text-center"><i class="fa fa-envelope-o fa-lg"></i></div></a>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
