@@ -1,0 +1,312 @@
+	#up
+	{
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		background: black;
+		padding: 13px;
+	}
+
+	p, h1, h4
+	{
+		font-family: "Open Sans";
+	}
+
+	.ceo, .weDo, .testimonials, .about, .numbers, .posts
+	{
+		padding: 30px 0 50px 0;
+	}
+
+	.gray
+	{
+		background: #EEE;
+	}
+
+	.fa-blue
+	{
+		color: #00E1FF;
+	}
+
+	.container
+	{
+		padding-left: 100px;
+		padding-right: 100px;
+
+	}
+
+	.navbarhead2
+	{
+		padding-left: 30px;
+	}
+
+
+	.ceo td:first-of-type
+	{
+		width: 250px;
+		vertical-align: top;
+	}
+
+	.ceo td:nth-of-type(2)
+	{
+		width: 100%;
+		vertical-align: top;
+		padding-left: 20px;
+	}
+
+	.ceo img
+	{
+		width: 220px;
+		margin-left: 30px;
+	}
+
+	.com, .pho, .web, .ill
+	{
+		padding: 25px 20px 15px 20px;
+		color: white;
+	}
+
+	.weDo .com
+	{
+		background: #00b9ed;
+		opacity:0.7;
+
+	}
+
+	.weDo .pho
+	{
+		background: #ff0020;
+		opacity:0.7;
+	}
+
+	.weDo .web
+	{
+		background: #00e5b7;
+		opacity:0.7;
+	}
+
+	.weDo .ill
+	{
+		background: #FFB300;
+		opacity:0.7;
+	}
+
+
+	.details
+	{
+		background-image: url("../images/stand-there.jpeg");
+		background-size: cover;
+		background-position: center;
+		color: white;
+	}
+
+	.details button
+	{
+		background:none;
+		color:white;
+	}
+
+	.details h1
+	{
+		font-size: 2.9vw;
+	}
+
+	.testimonials .function
+	{
+		color: #999;
+		font-weight: normal;
+		font-size: 0.8em;
+	}
+
+	.testimonials .name
+	{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 0.9em;
+	}
+
+	.testimonials .profile{
+		width: 130px;
+	}
+
+	.testimonials .commentsLeft
+	{
+		position: relative;
+		left: 8px;
+		background: white;
+		height: 100%;
+		width: 100%;
+		padding: 25px 10px;
+	}
+
+	.testimonials .commentsRight
+	{
+		position: relative;
+		right: 8px;
+		background: white;
+		height: 100%;
+		width: 100%;
+		padding: 25px 10px;
+	}
+
+	.testimonials .triangle-left
+	{
+		position: absolute;
+		top: 23px;
+		left: 143px;
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-right: 10px solid white;
+		border-bottom: 7px solid transparent;
+	}
+
+	.testimonials .triangle-right
+	{
+		position: absolute;
+		top: 23px;
+		right: 143px;
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-left: 10px solid white;
+		border-bottom: 7px solid transparent;
+	}
+
+	.testimonials img
+	{
+		border-radius: 100%;
+	}
+	
+	.posts
+	{
+		background: #272727;
+		color: white;
+	}
+
+	.posts table
+	{
+		width: 100%;
+	}
+
+	.posts table td:first-of-type
+	{
+		padding-bottom: 10px;
+		vertical-align: top;
+	}
+
+	.posts table td:nth-of-type(2)
+	{
+		padding: 0 10px;
+		vertical-align: top;
+	}
+
+	.posts table strong
+	{
+		font-size: 1.1em;
+	}
+
+	.posts li .text
+	{
+		color: white;
+	}
+
+	.UCase
+	{
+		text-transform: uppercase;
+	}
+
+	.date
+	{
+		font-size: 0.9em;
+		color: gray;
+	}
+
+	.leftList
+	{
+		padding-left: 17px;
+	}
+
+	.postsBtn button
+	{
+		background: black;
+		color: #333;
+	}
+
+	.postsDate
+	{
+		border-right: 1px solid gray;
+	}
+
+	.copyright
+	{
+		background: #222;
+		color:white;
+		padding: 30px 0 25px 0;
+	}
+
+	.copyright .sm1
+	{
+		border: 3px solid orange;
+		border-radius: 100%;
+	}
+	.copyright .sm2
+	{
+		border: 3px solid #00FFFB;
+		border-radius: 100%;
+	}
+	.copyright .sm3
+	{
+		border: 3px solid blue;
+		border-radius: 100%;
+	}
+	.copyright .sm4
+	{
+		border: 3px solid red;
+		border-radius: 100%;
+	}
+	.copyright .sm5
+	{
+		border: 3px solid #00C3FF;
+		border-radius: 100%;
+	}
+
+ 	.copyright .sm1 a:visited
+ 	{
+ 		color: orange;
+ 	}
+ 	
+ 	.copyright .sm2 a:visited
+ 	{
+ 		color: #00FFFB;
+ 	}
+ 	
+ 	.copyright .sm3 a:visited
+ 	{
+ 		color: blue;
+ 	}
+ 	
+ 	.copyright .sm4 a:visited
+ 	{
+ 		color: red;
+ 	}
+
+	.copyright .sm5 a:visited
+ 	{
+ 		color: #00C3FF;
+ 	}
+
+ 	.about .nav li:nth-of-type(2), .nav li:nth-of-type(3)
+ 	{
+ 		border: 1px solid #00FFFB;
+ 	}
+
+ 	.about ul:nth-of-type(2)
+ 	{
+		padding-left: 17px;
+  		color: #00FFFB;
+	}
+
+	.text
+	{
+		color: gray;
+	}

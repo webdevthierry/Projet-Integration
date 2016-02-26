@@ -1,0 +1,33 @@
+.row *
+		{
+			color: #666;
+		}
+
+		.centered
+		{
+		  position: fixed;
+		  top: 40%;
+		  left: 50%;
+		  /* bring your own prefixes */
+		  transform: translate(-40%, -50%);
+		}
+
+		h1
+		{
+			font-size: 100px;
+		}
+		h2
+		{
+			margin-top: -15px;
+		}
+
+		nav
+		{
+			color: white;
+			padding: 15px 0 15px 20px;
+		}
+
+		nav
+		{
+			background: #666;
+		}
