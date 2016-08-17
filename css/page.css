@@ -5,6 +5,7 @@
 		bottom: 20px;
 		background: black;
 		padding: 13px;
+		color: white;
 	}
 
 	p, h1, h4
@@ -244,53 +245,27 @@
 		padding: 30px 0 25px 0;
 	}
 
-	.copyright .sm1
-	{
-		border: 3px solid orange;
-		border-radius: 100%;
-	}
-	.copyright .sm2
-	{
-		border: 3px solid #00FFFB;
-		border-radius: 100%;
-	}
-	.copyright .sm3
-	{
-		border: 3px solid blue;
-		border-radius: 100%;
-	}
-	.copyright .sm4
-	{
-		border: 3px solid red;
-		border-radius: 100%;
-	}
-	.copyright .sm5
-	{
-		border: 3px solid #00C3FF;
-		border-radius: 100%;
-	}
-
- 	.copyright .sm1 a:visited
+ 	.copyright .sm1 a
  	{
  		color: orange;
  	}
  	
- 	.copyright .sm2 a:visited
+ 	.copyright .sm2 a
  	{
  		color: #00FFFB;
  	}
  	
- 	.copyright .sm3 a:visited
+ 	.copyright .sm3 a
  	{
  		color: blue;
  	}
  	
- 	.copyright .sm4 a:visited
+ 	.copyright .sm4 a
  	{
  		color: red;
  	}
 
-	.copyright .sm5 a:visited
+	.copyright .sm5 a
  	{
  		color: #00C3FF;
  	}
